@@ -49,7 +49,7 @@ Push to `main` and Hostinger deploys it.
 |---|---|
 | `/llms.txt` | A real file, served as `text/plain; charset=utf-8`. |
 | `/pricing.md` | A real file, served as `text/markdown; charset=utf-8`. |
-| `/tests`, `/runs`, `/settings` and the other app paths | A 308 redirect to the same path on app.tryclaritia.com. The query string comes along. |
+| `/tests`, `/runs`, `/settings` and the other app paths | A 301 redirect to the same path on app.tryclaritia.com. The query string comes along. |
 | Anything else | The 404 page. |
 
 The app paths are listed in `.htaccess`. Add a path there when the app gets a new top-level page.
@@ -73,8 +73,6 @@ The app paths are listed in `.htaccess`. Add a path there when the app gets a ne
    (it should land on `app.tryclaritia.com/tests?x=1`). Also try `http://` and `www.`: both should end on
    `https://tryclaritia.com/`. If you see an old page, purge the cache in hPanel (Performance → Cache Manager).
 
-If the site or `/tests` gives a server error, the server may not accept `R=308`.
-Change it to `R=301` in `.htaccess`.
 
 ## DNS
 
