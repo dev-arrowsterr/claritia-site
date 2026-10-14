@@ -1,0 +1,11 @@
+/*
+Theme Name: Claritia
+Theme URI: https://tryclaritia.com
+Author: Perceptric
+Description: The Claritia website. The homepage is hand-built in pages/home/ with its own HTML and CSS. The blog uses the regular WordPress editor.
+Version: 1.0.0
+Requires at least: 6.4
+Requires PHP: 8.0
+Text Domain: claritia
+*/
+/* Styles live in assets/base.css, pages/home/home.css and blog/blog.css. */
